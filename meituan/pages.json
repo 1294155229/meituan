@@ -1,0 +1,69 @@
+{
+	"easycom": {
+		// "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/tabbar/index/index",
+			"style": {
+				"navigationStyle":"custom"
+			}
+		}
+        ,{
+            "path" : "pages/views/index/citySearch/citySearch",
+            "style" : {
+				"navigationStyle":"default",
+				"navigationBarTitleText":"选择城市",
+				"navigationBarBackgroundColor":"#ffcc00",
+				"app-plus":{
+					"titleNView":{
+						"buttons":[{
+							"type":"home",
+							"float":"right"
+						}]
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/views/login/userLogin/userLogin",
+            "style" : {
+				"navigationStyle":"custom"
+			}
+        }
+        ,{
+            "path" : "components/mt-components/typeArea/typeArea",
+            "style" : {}
+        }
+        ,{
+            "path" : "components/mt-components/typeItem/typeItem",
+            "style" : {}
+        }
+        ,{
+            "path" : "components/mt-components/guessLike/guessLike",
+            "style" : {}
+        }
+    ],
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#02B5FC",
+		"borderStyle": "black",
+		"backgroundColor": "#F6F6F6",
+		"list": []
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#F8F8F8",
+		"animationType": "slide-in-right"
+	},
+	"condition": {
+		// "current": 1,
+		// "list": [{
+		// 	"name": "",
+		// 	"path": "pages/views/login/bindPhone",
+		// 	"query": ""
+		// }]
+	}
+}
